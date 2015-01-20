@@ -53,8 +53,6 @@ public class PhraseRes {
             
             ArrayList<Phrase> phs = new ArrayList();
             
-            
-            
             phs.add(Phrase.getPhraseByWeatherAndByBmi(bmilvl,change, wT1));
             phs.add(Phrase.getPhraseByWeatherAndByBmi(bmilvl,change, wT2));
             phs.add(Phrase.getPhraseByWeatherAndByBmi(bmilvl,change, wT3));
