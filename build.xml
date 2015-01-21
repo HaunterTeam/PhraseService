@@ -111,6 +111,11 @@
 				<include name="*.xml" />
 			</fileset>
 		</copy>
+		<ivy:makepom ivyfile="${basedir}/ivy.xml" pomfile="pom.xml" conf="default,runtime">
+		   <mapping conf="default" scope="compile"/>
+		   <mapping conf="runtime" scope="runtime"/>
+		   <dependency group="com.acme" artifact="acme-logging" version="1.0" optional="true"/>
+		</ivy:makepom>
 	</target>
 
 	<target name="execute">
