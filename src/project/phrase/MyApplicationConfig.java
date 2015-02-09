@@ -4,7 +4,7 @@ import javax.ws.rs.ApplicationPath;
 
 import org.glassfish.jersey.server.ResourceConfig;
 
-@ApplicationPath("project.phrase") /* project.phrase or phrase-service */
+@ApplicationPath("phrase-service") /* project.phrase or phrase-service */
 public class MyApplicationConfig extends ResourceConfig {
     public MyApplicationConfig () {
         packages("project.phrase");

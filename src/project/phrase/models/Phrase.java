@@ -1,7 +1,5 @@
 package project.phrase.models;
 
-import project.phrase.dao.EhealthDAO;
-
 import java.io.Serializable;
 import java.util.Collections;
 import java.util.List;
@@ -18,6 +16,8 @@ import javax.persistence.Table;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlRootElement;
+
+import project.phrase.dao.EhealthDAO;
 
 
 /**
@@ -109,7 +109,6 @@ public class Phrase implements Serializable {
     }
     
     public static Phrase getPhraseByWeatherAndByBmi(int bmi,int change,int wType) {
-    	System.out.println("Try to connect to DB..");
         EntityManager em = EhealthDAO.instance.createEntityManager();
         List<Phrase> m = em.createNamedQuery("Phrase.find", Phrase.class)
                 .setParameter("w", wType)
@@ -118,9 +117,6 @@ public class Phrase implements Serializable {
         EhealthDAO.instance.closeConnections(em);
         
         Collections.shuffle(m);
-        
-        System.out.println("Connected..");
-        
         return m.get(0);
     }
 

@@ -42,16 +42,11 @@ public class PhraseRes {
                 @QueryParam("wt2") int wT2,
                 @QueryParam("wt3") int wT3) {
     	
-    	System.out.println("Request done.");
-    	
             ArrayList<Phrase> phs = new ArrayList<Phrase>();
             
             phs.add(Phrase.getPhraseByWeatherAndByBmi(bmilvl,change, wT1));
             phs.add(Phrase.getPhraseByWeatherAndByBmi(bmilvl,change, wT2));
             phs.add(Phrase.getPhraseByWeatherAndByBmi(bmilvl,change, wT3));
-            
-
-            System.out.println("Return..");
             
             return phs;
 	}
