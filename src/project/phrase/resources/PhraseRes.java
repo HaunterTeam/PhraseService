@@ -40,18 +40,8 @@ public class PhraseRes {
                 @QueryParam("wt1") int wT1,
                 @QueryParam("wt2") int wT2,
                 @QueryParam("wt3") int wT3) {
-//
-//            System.err.println("ciao");
-//            int change = 0;
-//            if(bmiold != 0){
-//                if(bmi > bmiold)
-//                    change = 1;
-//                else
-//                    change = 2;
-//            }
-//            int bmiType = utils.BMIUtils.getLevelByBmi(bmi);
-            
-            ArrayList<Phrase> phs = new ArrayList();
+    	
+            ArrayList<Phrase> phs = new ArrayList<Phrase>();
             
             phs.add(Phrase.getPhraseByWeatherAndByBmi(bmilvl,change, wT1));
             phs.add(Phrase.getPhraseByWeatherAndByBmi(bmilvl,change, wT2));
