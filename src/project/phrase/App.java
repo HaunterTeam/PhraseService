@@ -29,8 +29,6 @@ public class App
         System.out.println("Starting standalone HTTP server..");
         JdkHttpServerFactory.createHttpServer(baseUrl, createApp());
         System.out.println("server starts on " + baseUrl + "\n [kill the process to exit]");
-        System.out.println("bombo");
-
     }
 
     public static ResourceConfig createApp() {
