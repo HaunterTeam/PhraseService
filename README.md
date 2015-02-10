@@ -1,6 +1,14 @@
 # PhraseService
 
-The PhraseService is a REST web service hosted on [https://restinphraseservice.herokuapp.com/](https://restinphraseservice.herokuapp.com/). It allows only GET requests with no token. An example of request is the following.
+The PhraseService is a REST web service hosted on [https://restinphraseservice.herokuapp.com/](https://restinphraseservice.herokuapp.com/). It allows only GET requests with no token.
+
+The goal of this service is to provide motivational quotes based on:
+
+* The `bmilvl` which is the actual bmi of the user.
+* The `change` which is the difference between the actual bmilvl and the old bmilvl
+* The weather conditions `wt1`,`wt2` and `wt3` for the next three days.
+
+An example of request is the following.
 ```
 GET https://restinphraseservice.herokuapp.com/phrase-service/phrase?bmilvl=<bmilvl>&change=<change>&wt1=<wt1>&wt2=<wt2>&wt3=<wt3>
 ```
