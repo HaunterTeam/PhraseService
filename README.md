@@ -16,3 +16,5 @@ The response output for the above request if the following.
 ```
 [{"idphrase":1,"phrase":"You fatted a bit. Go ahead and eat a lot of","weathertype":1,"bmirange":1,"change":1,"activity":"Eat and lie down."},{"idphrase":1,"phrase":"You fatted a bit. Go ahead and eat a lot of","weathertype":1,"bmirange":1,"change":1,"activity":"Eat and lie down."},{"idphrase":1,"phrase":"You fatted a bit. Go ahead and eat a lot of","weathertype":1,"bmirange":1,"change":1,"activity":"Eat and lie down."}]
 ```
+
+Contributors: [Luca Zamboni](https://github.com/luca-zamboni) 100%
