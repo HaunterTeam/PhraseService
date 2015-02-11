@@ -1,6 +1,6 @@
 # PhraseService
 
-The PhraseService is a REST web service hosted on [https://restinphraseservice.herokuapp.com/](https://restinphraseservice.herokuapp.com/). It allows only GET requests with no token.
+The PhraseService is a REST web service hosted on [http://188.226.183.46:8010](http://188.226.183.46:8010). It allows only GET requests with no token.
 
 The goal of this service is to provide motivational quotes based on:
 
@@ -10,7 +10,7 @@ The goal of this service is to provide motivational quotes based on:
 
 An example of request is the following.
 ```
-GET https://restinphraseservice.herokuapp.com/phrase-service/phrase?bmilvl=<bmilvl>&change=<change>&wt1=<wt1>&wt2=<wt2>&wt3=<wt3>
+GET http://188.226.183.46:8010/phrase-service/phrase?bmilvl=<bmilvl>&change=<change>&wt1=<wt1>&wt2=<wt2>&wt3=<wt3>
 ```
 The response output for the above request if the following.
 ```
